@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR & Barcode Scanner - Tanmay Singh</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="website icon" type="jpeg"
+    href="QR code.jpeg">
+</head>
+<body>
+    <div class="container">
+        <h1>QR & Barcode Scanner</h1>
+        <div class="scanner-options">
+            <button id="scan-qr">Scan QR Code</button>
+            <button id="scan-barcode">Scan Barcode</button>
+        </div>
+        <video id="camera-preview"></video>
+        <canvas id="canvas" hidden></canvas>
+        <p id="scan-result">Select an option to scan a QR code or a barcode.</p>
+    </div>
+
+    <!-- External Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/quagga/0.12.1/quagga.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jsqr/dist/jsQR.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
